@@ -1,0 +1,14 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: 127.0.0.1:8080
+  read_timeout: 120
+  write_timeout: 120
+functions:
+  road_to_philo:
+    lang: python3
+    handler: ./road_to_philo
+    image: iamjuush/road_to_philo:latest
+    environment:
+      read_timeout: 120s
+      write_timeout: 120s
