@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import sys
 import urllib.parse as urlparse
+import re
 from os import getenv
 
 visited_pages = []
@@ -31,7 +32,10 @@ def main(url, steps):
         links = para.find_all('a')
         if links:
             first_link = links[0].get('href')
-            next_url = "https://en.wikipedia.org%s" % first_link
+            if re.match(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', first_link):
+                next_url = first_link
+            else:
+                next_url = "https://en.wikipedia.org%s" % first_link
             main(next_url, steps)
     else:
         print("No links for this article. Reached dead end. Please try again.")
