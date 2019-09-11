@@ -42,6 +42,9 @@ def main(url, steps):
                 elif 'Help:IPA/' in wiki_link:
                     continue
 
+                elif '.ogg' in wiki_link:
+                    continue
+
                 else:
                     first_link = wiki_link
                     break
