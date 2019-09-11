@@ -31,7 +31,21 @@ def main(url, steps):
     for para in paragraphs:
         links = para.find_all('a')
         if links:
-            first_link = links[0].get('href')
+            for link in links:
+                wiki_link = link.get('href')
+                if wiki_link is None:
+                    continue
+
+                elif '#cite_note' in wiki_link:
+                    continue
+
+                elif 'Help:IPA/' in wiki_link:
+                    continue
+
+                else:
+                    first_link = wiki_link
+                    break
+
             if re.match(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', first_link):
                 next_url = first_link
             else:
