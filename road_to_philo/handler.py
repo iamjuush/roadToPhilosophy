@@ -45,6 +45,9 @@ def main(url, steps):
                 elif '.ogg' in wiki_link:
                     continue
 
+                elif 'File:' in wiki_link:
+                    continue
+
                 else:
                     first_link = wiki_link
                     break
