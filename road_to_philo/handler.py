@@ -14,10 +14,7 @@ visited_pages = []
 
 def select_link(links, para):
     for link in links:
-        for item in para.contents:
-            if link == item.next:
-                break
-        else:
+        if sum([str(link) in i for i in re.findall('\(([^)]+)', str(para))]) > 0:
             continue
 
         wiki_link = link.get('href')
@@ -46,7 +43,8 @@ def select_link(links, para):
 
 def get_webpage(url):
     r = requests.get(url)
-    if r.status_code == 404:
+    status_code = r.status_code
+    if status_code == 404:
         return r, False
     else:
         return r, True
@@ -58,21 +56,6 @@ def check_acyclic(title):
         return True
     else:
         return False
-
-
-def remove_word_origin(para, title):
-    content = para.contents
-    for idx, c in enumerate(content):
-        if (title.strip().lower() in str(c).lower()) and ('(' in str(content[idx+1])):
-            for i, item in enumerate(para):
-                if ')' in item:
-                    del para.contents[1:i+1]
-                    return para
-    else:
-        return para
-
-
-
 
 
 def main(url, steps):
@@ -96,7 +79,6 @@ def main(url, steps):
 
     paragraphs = soup.find_all('p')
     for para in paragraphs:
-        para = remove_word_origin(para, title)
         links = para.find_all('a')
         if links:
             first_link = select_link(links, para)
