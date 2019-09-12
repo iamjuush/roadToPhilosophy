@@ -12,9 +12,21 @@ logger = logging.getLogger(__name__)
 visited_pages = []
 
 
+def parenthetic_contents(string):
+    """Generate parenthesized contents in string as pairs (level, contents)."""
+    stack = []
+    for i, c in enumerate(string):
+        if c == '(':
+            stack.append(i)
+        elif c == ')' and stack:
+            start = stack.pop()
+            yield (len(stack), string[start + 1: i])
+
+
 def select_link(links, para):
+    para_text = list(parenthetic_contents(str(para)))
     for link in links:
-        if sum([str(link) in i for i in re.findall('\(([^)]+)', str(para))]) > 0:
+        if sum([str(link) in bracket[1] for bracket in para_text]) > 0:
             continue
 
         wiki_link = link.get('href')
