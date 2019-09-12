@@ -4,7 +4,11 @@ import sys
 import urllib.parse as urlparse
 import re
 import logging
-from os import getenv
+from joblib import Memory
+from os import getenv, path
+
+CACHE_PATH = path.join(path.dirname(__file__), 'urlCache')
+memory = Memory(CACHE_PATH, verbose=0)
 
 logging.basicConfig(level='INFO')
 logger = logging.getLogger(__name__)
@@ -53,7 +57,9 @@ def select_link(links, para):
         return None
 
 
+@memory.cache
 def get_webpage(url):
+    logger.debug("Cache not used")
     r = requests.get(url)
     status_code = r.status_code
     if status_code == 404:
