@@ -1,116 +1,10 @@
-from bs4 import BeautifulSoup
-import requests
-import sys
 import urllib.parse as urlparse
-import re
 import logging
-from joblib import Memory
-from os import getenv, path
+from os import getenv
 
-CACHE_PATH = path.join(path.dirname(__file__), 'urlCache')
-memory = Memory(CACHE_PATH, verbose=0)
+from .Crawler import Crawler
 
-logging.basicConfig(level='INFO')
 logger = logging.getLogger(__name__)
-
-visited_pages = []
-
-
-def parenthetic_contents(string):
-    """Generate parenthesized contents in string as pairs (level, contents)."""
-    stack = []
-    for i, c in enumerate(string):
-        if c == '(':
-            stack.append(i)
-        elif c == ')' and stack:
-            start = stack.pop()
-            yield (len(stack), string[start + 1: i])
-
-
-def select_link(links, para):
-    para_text = list(parenthetic_contents(str(para)))
-    for link in links:
-        if sum([str(link) in bracket[1] for bracket in para_text]) > 0:
-            continue
-
-        wiki_link = link.get('href')
-        if wiki_link is None:
-            continue
-
-        elif '#cite_note' in wiki_link:
-            continue
-
-        elif 'Help:IPA/' in wiki_link:
-            continue
-
-        elif '.ogg' in wiki_link:
-            continue
-
-        elif 'File:' in wiki_link:
-            continue
-
-        else:
-            first_link = wiki_link
-            return first_link
-
-    else:
-        return None
-
-
-@memory.cache
-def get_webpage(url):
-    logger.debug("Cache not used")
-    r = requests.get(url)
-    status_code = r.status_code
-    if status_code == 404:
-        return r, False
-    else:
-        return r, True
-
-
-def check_acyclic(title):
-    if title not in visited_pages:
-        visited_pages.append(title)
-        return True
-    else:
-        return False
-
-
-def main(url, steps):
-    steps += 1
-    r, http_ok = get_webpage(url)
-    if not http_ok:
-        logger.info('No such wiki page (404). Please try another topic.')
-        sys.exit(0)
-
-    soup = BeautifulSoup(r.text, 'html.parser')
-    title = soup.title.string.split('-')[0]
-
-    if not check_acyclic(title):
-        logger.info('Entered a loop! Back at: {}'.format(title))
-        sys.exit(0)
-
-    logger.info('Step number: {} - {}'.format(steps, title))
-    if url == 'https://en.wikipedia.org/wiki/Philosophy':
-        logger.info('Reached Philosopy!')
-        sys.exit(0)
-
-    paragraphs = soup.find_all('p')
-    for para in paragraphs:
-        links = para.find_all('a')
-        if links:
-            first_link = select_link(links, para)
-            if not first_link:
-                continue
-
-            if re.match(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', first_link):
-                next_url = first_link
-            else:
-                next_url = "https://en.wikipedia.org%s" % first_link
-            main(next_url, steps)
-    else:
-        logger.info("No links for this article. Reached dead end. Please try again.")
-        sys.exit(0)
 
 
 def handle(req):
@@ -126,14 +20,6 @@ def handle(req):
     topic = input_topic.replace(" ", "_")
     topic_url = "https://en.wikipedia.org/wiki/%s" % topic
     logger.info("Initial URL: ", topic_url)
-    main(topic_url, steps=0)
+    crawler = Crawler(topic_url)
+    crawler.start()
 
-    return req
-
-
-if __name__ == '__main__':
-    topic = input('Please enter a topic name: \n')
-    topic = topic.replace(" ", "_")
-    topic_url = "https://en.wikipedia.org/wiki/%s" % topic
-    logger.info("Initial URL: {}".format(topic_url))
-    main(topic_url, steps=0)
