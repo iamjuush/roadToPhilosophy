@@ -34,19 +34,23 @@ class Crawler:
             return True
         else:
             logger.info('Entered a loop! Back at: {}'.format(title))
-            self.exit()
+            return False
 
     def crawl(self):
         webpage = WebPage(self.next_url)
         self.title = webpage.title
-        self._check_acyclic()
+        if not self._check_acyclic():
+            self.exit()
+            return
         if webpage.check_website_info() == 0:
             self.exit()
+            return
         logger.info('Step number: {} - {}'.format(self.steps, webpage.title))
         self.next_url = webpage.scrape_weblinks()
         if self.next_url is None:
             logger.info("No URLs to go to! Please try again")
             self.exit()
+            return
         self.add_step()
         self.crawl()
 
@@ -62,7 +66,7 @@ class Crawler:
             logger.info("Starting from a new random topic!")
             self.steps = 0
             self.local_webpages_list = []
-            self.crawl()
+            return
         else:
             logger.info("Terminating and saving data to crawlerData")
             with open('crawlerData', 'wb') as f:

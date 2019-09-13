@@ -18,7 +18,10 @@ def main():
     topic_url = "https://en.wikipedia.org/wiki/%s" % topic
     logger.info("Initial URL: {}".format(topic_url))
     crawler = Crawler(topic_url, mode)
-    crawler.start()
+
+    while True:
+        crawler.start()
+        logger.info("Total nodes: {}".format(len(crawler.global_webpages_list)))
 
 
 if __name__ == '__main__':
