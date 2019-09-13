@@ -31,6 +31,7 @@ class Crawler:
         webpage.check_website_info()
         logger.info('Step number: {} - {}'.format(self.steps, webpage.title))
         self.next_url = webpage.scrape_weblinks()
+        self.add_step()
         self.crawl()
 
     def start(self):
