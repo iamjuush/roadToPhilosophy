@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <meta>
+      <creator>NetworkX 2.3</creator>
+      <lastmodified>13/09/2019</lastmodified>
+    </meta>
+    <nodes>
+      <node id="4TRK Mind" label="4TRK Mind" />
+      <node id="Album" label="Album" />
+      <node id="Compact disc" label="Compact disc" />
+      <node id="Digital media" label="Digital media" />
+      <node id="Media (communication)" label="Media (communication)" />
+      <node id="Communication" label="Communication" />
+      <node id="Meaning (semiotics)" label="Meaning (semiotics)" />
+      <node id="Semiotics" label="Semiotics" />
+      <node id="Semiosis" label="Semiosis" />
+      <node id="Action (philosophy)" label="Action (philosophy)" />
+      <node id="Philosophy" label="Philosophy" />
+      <node id="Kari Arkivuo" label="Kari Arkivuo" />
+      <node id="Association football" label="Association football" />
+      <node id="Team sport" label="Team sport" />
+      <node id="Sport" label="Sport" />
+      <node id="Competition" label="Competition" />
+      <node id="Goal" label="Goal" />
+      <node id="Planning" label="Planning" />
+      <node id="Process" label="Process" />
+      <node id="Montromant" label="Montromant" />
+      <node id="Communes of France" label="Communes of France" />
+      <node id="Administrative division" label="Administrative division" />
+      <node id="Country" label="Country" />
+      <node id="Political geography" label="Political geography" />
+      <node id="Politics" label="Politics" />
+      <node id="Governance" label="Governance" />
+      <node id="Government" label="Government" />
+      <node id="State (polity)" label="State (polity)" />
+      <node id="Polity" label="Polity" />
+      <node id="Identity (social science)" label="Identity (social science)" />
+      <node id="Psychology" label="Psychology" />
+      <node id="Mind" label="Mind" />
+      <node id="Cognition" label="Cognition" />
+      <node id="Intellectual functioning" label="Intellectual functioning" />
+      <node id="Reason" label="Reason" />
+      <node id="Consciousness" label="Consciousness" />
+      <node id="Quality (philosophy)" label="Quality (philosophy)" />
+      <node id="Property (philosophy)" label="Property (philosophy)" />
+      <node id="Logic" label="Logic" />
+      <node id="Logical form" label="Logical form" />
+      <node id="Cecilia Häll" label="Cecilia Häll" />
+      <node id="Sweden" label="Sweden" />
+      <node id="Geographic coordinate system" label="Geographic coordinate system" />
+      <node id="Coordinate system" label="Coordinate system" />
+      <node id="Geometry" label="Geometry" />
+      <node id="Mathematics" label="Mathematics" />
+      <node id="Quantity" label="Quantity" />
+      <node id="Counting" label="Counting" />
+      <node id="Number" label="Number" />
+      <node id="Mathematical object" label="Mathematical object" />
+      <node id="Abstract and concrete" label="Abstract and concrete" />
+      <node id="Object (philosophy)" label="Object (philosophy)" />
+      <node id="Mughalabad" label="Mughalabad" />
+      <node id="Union councils of Pakistan" label="Union councils of Pakistan" />
+      <node id="Local government in Pakistan" label="Local government in Pakistan" />
+      <node id="Parliament of Pakistan" label="Parliament of Pakistan" />
+      <node id="Confidence and supply" label="Confidence and supply" />
+      <node id="Parliamentary system" label="Parliamentary system" />
+      <node id="Democracy" label="Democracy" />
+      <node id="Benedict Groeschel" label="Benedict Groeschel" />
+      <node id="Franciscan Friars of the Renewal" label="Franciscan Friars of the Renewal" />
+      <node id="Religious institute" label="Religious institute" />
+      <node id="Sacraments of the Catholic Church" label="Sacraments of the Catholic Church" />
+      <node id="God in Catholicism" label="God in Catholicism" />
+      <node id="The Voice of the Negro" label="The Voice of the Negro" />
+      <node id="African Americans" label="African Americans" />
+      <node id="Ethnic group" label="Ethnic group" />
+      <node id="Piruzabad, Golestan" label="Piruzabad, Golestan" />
+      <node id="Kongor Rural District" label="Kongor Rural District" />
+      <node id="Dehestan (administrative division)" label="Dehestan (administrative division)" />
+      <node id="Administrative divisions of Iran" label="Administrative divisions of Iran" />
+      <node id="Empire Award for Best Horror" label="Empire Award for Best Horror" />
+      <node id="Empire Awards" label="Empire Awards" />
+      <node id="1st Empire Awards" label="1st Empire Awards" />
+      <node id="West Riverdale Historic District" label="West Riverdale Historic District" />
+      <node id="Historic districts in the United States" label="Historic districts in the United States" />
+      <node id="Historic district" label="Historic district" />
+      <node id="City" label="City" />
+      <node id="Human settlement" label="Human settlement" />
+      <node id="Geography" label="Geography" />
+      <node id="Science" label="Science" />
+      <node id="Knowledge" label="Knowledge" />
+      <node id="Fact" label="Fact" />
+      <node id="Reality" label="Reality" />
+      <node id="Object of the mind" label="Object of the mind" />
+      <node id="Filial piety in Buddhism" label="Filial piety in Buddhism" />
+      <node id="Buddhist ethics" label="Buddhist ethics" />
+      <node id="Enlightenment in Buddhism" label="Enlightenment in Buddhism" />
+      <node id="Buddhism" label="Buddhism" />
+      <node id="Major religious groups" label="Major religious groups" />
+      <node id="World" label="World" />
+      <node id="Earth" label="Earth" />
+      <node id="Planet" label="Planet" />
+      <node id="Sun" label="Sun" />
+      <node id="Star" label="Star" />
+      <node id="Astronomical object" label="Astronomical object" />
+      <node id="Physical object" label="Physical object" />
+      <node id="contiguity" label="contiguity" />
+      <node id="French language" label="French language" />
+      <node id="Romance languages" label="Romance languages" />
+      <node id="Vulgar Latin" label="Vulgar Latin" />
+      <node id="Standard language" label="Standard language" />
+      <node id="Variety (linguistics)" label="Variety (linguistics)" />
+      <node id="Sociolinguistics" label="Sociolinguistics" />
+      <node id="Society" label="Society" />
+      <node id="Social group" label="Social group" />
+      <node id="Social science" label="Social science" />
+      <node id="Discipline (academia)" label="Discipline (academia)" />
+      <node id="Simone Scuffet" label="Simone Scuffet" />
+      <node id="Football in Italy" label="Football in Italy" />
+      <node id="Coincide (album)" label="Coincide (album)" />
+      <node id="Dewey Redman" label="Dewey Redman" />
+      <node id="Free jazz" label="Free jazz" />
+      <node id="Jazz" label="Jazz" />
+      <node id="Music genre" label="Music genre" />
+      <node id="Music" label="Music" />
+      <node id="Culture" label="Culture" />
+      <node id="Social behavior" label="Social behavior" />
+      <node id="Behavior" label="Behavior" />
+      <node id="Karin Svingstedt" label="Karin Svingstedt" />
+      <node id="Cross" label="Cross" />
+      <node id="Skiing" label="Skiing" />
+      <node id="Winter sports" label="Winter sports" />
+      <node id="List of Spanish films of 1964" label="List of Spanish films of 1964" />
+      <node id="Spain" label="Spain" />
+      <node id="Winfield Ervin Jr." label="Winfield Ervin Jr." />
+      <node id="List of mayors of Anchorage, Alaska" label="List of mayors of Anchorage, Alaska" />
+      <node id="Alaska" label="Alaska" />
+      <node id="Gədik" label="Gədik" />
+      <node id="The Scent of Burning Grass" label="The Scent of Burning Grass" />
+      <node id="Drama (film and television)" label="Drama (film and television)" />
+      <node id="Film" label="Film" />
+      <node id="Cinematography" label="Cinematography" />
+      <node id="Jack Norris (ice hockey)" label="Jack Norris (ice hockey)" />
+      <node id="Ice hockey" label="Ice hockey" />
+      <node id="Contact sport" label="Contact sport" />
+      <node id="Criticism of Mother Teresa" label="Criticism of Mother Teresa" />
+      <node id="Nun" label="Nun" />
+      <node id="Evangelical counsels" label="Evangelical counsels" />
+      <node id="Portal:Christianity" label="Portal:Christianity" />
+      <node id="Christianity" label="Christianity" />
+      <node id="Abrahamic religions" label="Abrahamic religions" />
+      <node id="Semitic people" label="Semitic people" />
+      <node id="Semitic languages" label="Semitic languages" />
+      <node id="Afroasiatic languages" label="Afroasiatic languages" />
+      <node id="Language family" label="Language family" />
+      <node id="Language" label="Language" />
+      <node id="Linguistic system" label="Linguistic system" />
+      <node id="Ferdinand de Saussure" label="Ferdinand de Saussure" />
+      <node id="Switzerland" label="Switzerland" />
+      <node id="Europe" label="Europe" />
+      <node id="Continent" label="Continent" />
+      <node id="Landmass" label="Landmass" />
+      <node id="Land" label="Land" />
+      <node id="Controversies surrounding Mortal Kombat" label="Controversies surrounding Mortal Kombat" />
+      <node id="Mortal Kombat" label="Mortal Kombat" />
+      <node id="Media franchise" label="Media franchise" />
+      <node id="Chromium hydride" label="Chromium hydride" />
+      <node id="Chromium" label="Chromium" />
+      <node id="Chemical element" label="Chemical element" />
+      <node id="Chemical species" label="Chemical species" />
+      <node id="Chemical substance" label="Chemical substance" />
+      <node id="Matter" label="Matter" />
+      <node id="Classical physics" label="Classical physics" />
+      <node id="Physics" label="Physics" />
+      <node id="Natural science" label="Natural science" />
+      <node id="Branches of science" label="Branches of science" />
+      <node id="Sindhura" label="Sindhura" />
+    </nodes>
+    <edges>
+      <edge id="0" source="4TRK Mind" target="Album" />
+      <edge id="1" source="Album" target="Compact disc" />
+      <edge id="2" source="Compact disc" target="Digital media" />
+      <edge id="3" source="Digital media" target="Media (communication)" />
+      <edge id="4" source="Media (communication)" target="Communication" />
+      <edge id="5" source="Communication" target="Meaning (semiotics)" />
+      <edge id="6" source="Meaning (semiotics)" target="Semiotics" />
+      <edge id="7" source="Semiotics" target="Semiosis" />
+      <edge id="8" source="Semiosis" target="Action (philosophy)" />
+      <edge id="9" source="Action (philosophy)" target="Philosophy" />
+      <edge id="10" source="Kari Arkivuo" target="Association football" />
+      <edge id="11" source="Association football" target="Team sport" />
+      <edge id="12" source="Team sport" target="Sport" />
+      <edge id="13" source="Sport" target="Competition" />
+      <edge id="14" source="Competition" target="Goal" />
+      <edge id="15" source="Goal" target="Planning" />
+      <edge id="16" source="Planning" target="Process" />
+      <edge id="17" source="Process" target="Action (philosophy)" />
+      <edge id="18" source="Montromant" target="Communes of France" />
+      <edge id="19" source="Communes of France" target="Administrative division" />
+      <edge id="20" source="Administrative division" target="Country" />
+      <edge id="21" source="Country" target="Political geography" />
+      <edge id="22" source="Political geography" target="Politics" />
+      <edge id="23" source="Politics" target="Governance" />
+      <edge id="24" source="Governance" target="Government" />
+      <edge id="25" source="Government" target="State (polity)" />
+      <edge id="26" source="State (polity)" target="Polity" />
+      <edge id="27" source="Polity" target="Identity (social science)" />
+      <edge id="28" source="Identity (social science)" target="Psychology" />
+      <edge id="29" source="Psychology" target="Mind" />
+      <edge id="30" source="Mind" target="Cognition" />
+      <edge id="31" source="Cognition" target="Intellectual functioning" />
+      <edge id="32" source="Intellectual functioning" target="Reason" />
+      <edge id="33" source="Reason" target="Consciousness" />
+      <edge id="34" source="Consciousness" target="Quality (philosophy)" />
+      <edge id="35" source="Quality (philosophy)" target="Property (philosophy)" />
+      <edge id="36" source="Property (philosophy)" target="Logic" />
+      <edge id="37" source="Logic" target="Logical form" />
+      <edge id="38" source="Logical form" target="Philosophy" />
+      <edge id="39" source="Cecilia Häll" target="Sweden" />
+      <edge id="40" source="Sweden" target="Geographic coordinate system" />
+      <edge id="41" source="Geographic coordinate system" target="Coordinate system" />
+      <edge id="42" source="Coordinate system" target="Geometry" />
+      <edge id="43" source="Geometry" target="Mathematics" />
+      <edge id="44" source="Mathematics" target="Quantity" />
+      <edge id="45" source="Quantity" target="Counting" />
+      <edge id="46" source="Counting" target="Number" />
+      <edge id="47" source="Number" target="Mathematical object" />
+      <edge id="48" source="Mathematical object" target="Abstract and concrete" />
+      <edge id="49" source="Abstract and concrete" target="Object (philosophy)" />
+      <edge id="50" source="Object (philosophy)" target="Philosophy" />
+      <edge id="51" source="Mughalabad" target="Union councils of Pakistan" />
+      <edge id="52" source="Union councils of Pakistan" target="Local government in Pakistan" />
+      <edge id="53" source="Local government in Pakistan" target="Parliament of Pakistan" />
+      <edge id="54" source="Parliament of Pakistan" target="Confidence and supply" />
+      <edge id="55" source="Confidence and supply" target="Parliamentary system" />
+      <edge id="56" source="Parliamentary system" target="Democracy" />
+      <edge id="57" source="Democracy" target="Government" />
+      <edge id="58" source="Benedict Groeschel" target="Franciscan Friars of the Renewal" />
+      <edge id="59" source="Franciscan Friars of the Renewal" target="Religious institute" />
+      <edge id="60" source="Religious institute" target="Sacraments of the Catholic Church" />
+      <edge id="61" source="Sacraments of the Catholic Church" target="God in Catholicism" />
+      <edge id="62" source="The Voice of the Negro" target="African Americans" />
+      <edge id="63" source="African Americans" target="Ethnic group" />
+      <edge id="64" source="Ethnic group" target="Identity (social science)" />
+      <edge id="65" source="Piruzabad, Golestan" target="Kongor Rural District" />
+      <edge id="66" source="Kongor Rural District" target="Dehestan (administrative division)" />
+      <edge id="67" source="Dehestan (administrative division)" target="Administrative divisions of Iran" />
+      <edge id="68" source="Administrative divisions of Iran" target="Administrative division" />
+      <edge id="69" source="Empire Award for Best Horror" target="Empire Awards" />
+      <edge id="70" source="Empire Awards" target="1st Empire Awards" />
+      <edge id="71" source="West Riverdale Historic District" target="Historic districts in the United States" />
+      <edge id="72" source="Historic districts in the United States" target="Historic district" />
+      <edge id="73" source="Historic district" target="City" />
+      <edge id="74" source="City" target="Human settlement" />
+      <edge id="75" source="Human settlement" target="Geography" />
+      <edge id="76" source="Geography" target="Science" />
+      <edge id="77" source="Science" target="Knowledge" />
+      <edge id="78" source="Knowledge" target="Fact" />
+      <edge id="79" source="Fact" target="Reality" />
+      <edge id="80" source="Reality" target="Object of the mind" />
+      <edge id="81" source="Object of the mind" target="Object (philosophy)" />
+      <edge id="82" source="Filial piety in Buddhism" target="Buddhist ethics" />
+      <edge id="83" source="Buddhist ethics" target="Enlightenment in Buddhism" />
+      <edge id="84" source="Enlightenment in Buddhism" target="Buddhism" />
+      <edge id="85" source="Buddhism" target="Major religious groups" />
+      <edge id="86" source="Major religious groups" target="World" />
+      <edge id="87" source="World" target="Earth" />
+      <edge id="88" source="Earth" target="Planet" />
+      <edge id="89" source="Planet" target="Sun" />
+      <edge id="90" source="Sun" target="Star" />
+      <edge id="91" source="Star" target="Astronomical object" />
+      <edge id="92" source="Astronomical object" target="Physical object" />
+      <edge id="93" source="Physical object" target="contiguity" />
+      <edge id="94" source="contiguity" target="French language" />
+      <edge id="95" source="French language" target="Romance languages" />
+      <edge id="96" source="Romance languages" target="Vulgar Latin" />
+      <edge id="97" source="Vulgar Latin" target="Standard language" />
+      <edge id="98" source="Standard language" target="Variety (linguistics)" />
+      <edge id="99" source="Variety (linguistics)" target="Sociolinguistics" />
+      <edge id="100" source="Sociolinguistics" target="Society" />
+      <edge id="101" source="Society" target="Social group" />
+      <edge id="102" source="Social group" target="Social science" />
+      <edge id="103" source="Social science" target="Discipline (academia)" />
+      <edge id="104" source="Discipline (academia)" target="Knowledge" />
+      <edge id="105" source="Simone Scuffet" target="Football in Italy" />
+      <edge id="106" source="Football in Italy" target="Association football" />
+      <edge id="107" source="Coincide (album)" target="Dewey Redman" />
+      <edge id="108" source="Dewey Redman" target="Free jazz" />
+      <edge id="109" source="Free jazz" target="Jazz" />
+      <edge id="110" source="Jazz" target="Music genre" />
+      <edge id="111" source="Music genre" target="Music" />
+      <edge id="112" source="Music" target="Culture" />
+      <edge id="113" source="Culture" target="Social behavior" />
+      <edge id="114" source="Social behavior" target="Behavior" />
+      <edge id="115" source="Behavior" target="Action (philosophy)" />
+      <edge id="116" source="Karin Svingstedt" target="Cross" />
+      <edge id="117" source="Cross" target="Skiing" />
+      <edge id="118" source="Skiing" target="Winter sports" />
+      <edge id="119" source="Winter sports" target="Sport" />
+      <edge id="120" source="List of Spanish films of 1964" target="Spain" />
+      <edge id="121" source="Spain" target="Geographic coordinate system" />
+      <edge id="122" source="Winfield Ervin Jr." target="List of mayors of Anchorage, Alaska" />
+      <edge id="123" source="List of mayors of Anchorage, Alaska" target="Alaska" />
+      <edge id="124" source="Alaska" target="Geographic coordinate system" />
+      <edge id="125" source="Gədik" target="Geographic coordinate system" />
+      <edge id="126" source="The Scent of Burning Grass" target="Drama (film and television)" />
+      <edge id="127" source="Drama (film and television)" target="Film" />
+      <edge id="128" source="Film" target="Cinematography" />
+      <edge id="129" source="Jack Norris (ice hockey)" target="Ice hockey" />
+      <edge id="130" source="Ice hockey" target="Contact sport" />
+      <edge id="131" source="Contact sport" target="Sport" />
+      <edge id="132" source="Criticism of Mother Teresa" target="Nun" />
+      <edge id="133" source="Nun" target="Evangelical counsels" />
+      <edge id="134" source="Evangelical counsels" target="Portal:Christianity" />
+      <edge id="135" source="Portal:Christianity" target="Christianity" />
+      <edge id="136" source="Christianity" target="Abrahamic religions" />
+      <edge id="137" source="Abrahamic religions" target="Semitic people" />
+      <edge id="138" source="Semitic people" target="Semitic languages" />
+      <edge id="139" source="Semitic languages" target="Afroasiatic languages" />
+      <edge id="140" source="Afroasiatic languages" target="Language family" />
+      <edge id="141" source="Language family" target="Language" />
+      <edge id="142" source="Language" target="Linguistic system" />
+      <edge id="143" source="Linguistic system" target="Ferdinand de Saussure" />
+      <edge id="144" source="Ferdinand de Saussure" target="Switzerland" />
+      <edge id="145" source="Switzerland" target="Europe" />
+      <edge id="146" source="Europe" target="Continent" />
+      <edge id="147" source="Continent" target="Landmass" />
+      <edge id="148" source="Landmass" target="Land" />
+      <edge id="149" source="Land" target="Earth" />
+      <edge id="150" source="Controversies surrounding Mortal Kombat" target="Mortal Kombat" />
+      <edge id="151" source="Mortal Kombat" target="Media franchise" />
+      <edge id="152" source="Media franchise" target="Media (communication)" />
+      <edge id="153" source="Chromium hydride" target="Chromium" />
+      <edge id="154" source="Chromium" target="Chemical element" />
+      <edge id="155" source="Chemical element" target="Chemical species" />
+      <edge id="156" source="Chemical species" target="Chemical substance" />
+      <edge id="157" source="Chemical substance" target="Matter" />
+      <edge id="158" source="Matter" target="Classical physics" />
+      <edge id="159" source="Classical physics" target="Physics" />
+      <edge id="160" source="Physics" target="Natural science" />
+      <edge id="161" source="Natural science" target="Branches of science" />
+      <edge id="162" source="Branches of science" target="Science" />
+    </edges>
+  </graph>
+</gexf>
