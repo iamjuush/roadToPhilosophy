@@ -9,6 +9,8 @@ verify_ssl = true
 beautifulsoup4 = "*"
 requests = "*"
 joblib = "*"
+networkx = "*"
+matplotlib = "*"
 
 [requires]
 python_version = "3"

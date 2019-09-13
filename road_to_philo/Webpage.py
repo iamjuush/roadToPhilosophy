@@ -51,10 +51,10 @@ class WebPage:
 
     def check_website_info(self):
         if self._check_404():
-            sys.exit(0)
+            return 0
         if self._check_philosophy():
-            sys.exit(0)
-        return
+            return 0
+        return 1
 
     def _check_404(self):
         if self.status_code == 404:
@@ -111,5 +111,4 @@ class WebPage:
                 self.check_url_type()
                 return self.next_url
         else:
-            logger.info("No links for this article. Reached dead end. Please try again.")
-            sys.exit(0)
+            return None
